@@ -22,7 +22,9 @@
 
 - Benchmark executables are available at `{build_dir}/benchmark/{project_name}-bench-{bench_name}`.
 
-- Do not forget to use `Asan` build mode.
+- Do not forget to use `Asan` build mode for debugging.
+
+- Press F5 to build and run tests under a debuger in VSCode UI.
 
 ## Thanks
 
