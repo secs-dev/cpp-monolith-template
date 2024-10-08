@@ -12,8 +12,10 @@ add_subdirectory(source)
 
 if(MONOLITH_DEVELOPER)
     find_package(GTest REQUIRED)
-    find_package(GBenchmark REQUIRED)
-
     add_subdirectory(test)
+endif()
+    
+if(MONOLITH_BENCHMARK)
+    find_package(GBenchmark REQUIRED)
     add_subdirectory(benchmark)
 endif()
