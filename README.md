@@ -23,3 +23,9 @@
 - Benchmark executables are available at `{build_dir}/benchmark/{project_name}-bench-{bench_name}`.
 
 - Do not forget to use `Asan` build mode.
+
+## Thanks
+
+- <https://gitlab.com/Lipovsky/twist>
+
+- <https://github.com/vityaman-edu/bst>
