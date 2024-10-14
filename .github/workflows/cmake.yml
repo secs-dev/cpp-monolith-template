@@ -33,4 +33,9 @@ jobs:
         run: CC=clang CXX=clang++ bash ci/prepare.bash ${{ matrix.cmake_build_type }}
 
       - name: Precommit
-        run: bash ci/precommit.bash
+        if: matrix.cmake_build_type == 'Release'
+        run: bash ci/precommit.bash check --style
+
+      - name: Precommit (no style checks)
+        if: matrix.cmake_build_type == 'Asan'
+        run: bash ci/precommit.bash check --no-style
